@@ -6,8 +6,8 @@
     }
     
     .logo {
-        width: 29px;
-        height: 29px;
+        width: 18px;
+        height: 18px;
         padding: 0.1em 0.3em;
     }
     
@@ -16,12 +16,11 @@
     }
     
     .nav_links {
-        list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: rgb(173,216, 230);
-        height: 2em;
+        height: 1.4em;
     }
       
     .nav_list {
@@ -32,9 +31,9 @@
     .nav_list a {
         display: block;
         font-weight: 500;
-        font-size: 0.7em;
+        font-size: 0.55em;
         text-align: center;
-        padding: 0.8em 0.5em;
+        padding: 0.7em 0.3em;
         text-decoration: none;
     }
       
@@ -49,7 +48,7 @@
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     * { 
         color: rgb(0,0,139);
     }
