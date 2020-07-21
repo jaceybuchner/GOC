@@ -1,5 +1,5 @@
 
-html, body {height: 100%; overflow: hidden}
+html, body {height: 100%;}
 
 @media only screen and (max-width: 768px) {
     * {
@@ -148,8 +148,64 @@ html, body {height: 100%; overflow: hidden}
     }
 
     .gladImg{
-        width: 100px;
-        height: 100px;
+        width: 80%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bContainer2 {
+        font-size: 0.7em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .gImg3 {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .rContainer {
+        font-size: 0.7em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box6 {
+        text-align: center;
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box7 {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box8 {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box10 {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.7em;
     }
 }
 
@@ -262,7 +318,6 @@ html, body {height: 100%; overflow: hidden}
     .rContainer {
         display: flex;
         flex-direction: column;
-    
     }
     
     .leftB {
@@ -330,16 +385,20 @@ html, body {height: 100%; overflow: hidden}
     }
     
     .textBox5 {
-        
-        width: 500px;
+        width: 60%;
         height: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .box6 {
         text-align: center;
-        padding-left: 30%;
         width: 700px;
         height: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .box7 {
