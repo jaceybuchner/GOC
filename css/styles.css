@@ -1,7 +1,7 @@
 
 html, body {height: 100%;}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     * {
         color: rgb(0,0,139);
     }
@@ -55,11 +55,17 @@ html, body {height: 100%;}
     }
     
     .buttonContainer {
+        padding-top: 10px;
+        height: 150px;
         display: flex;
         align-items: center;
         flex-direction: column;
+        justify-content: space-evenly;
     }
 
+    .logIn a{
+        text-decoration: none;
+    }
 
     .b1 {
         background-color: #FF1100;
@@ -92,15 +98,21 @@ html, body {height: 100%;}
     
     
     .gladImg2 {
-        padding: 15%;
+        padding: 30px;
         width: 70%;
         height: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .speechIsPower {
-        width: 300px;
+        width: 80%;
         height: 300px;
         text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .bContainer {
@@ -207,6 +219,50 @@ html, body {height: 100%;}
         margin-right: auto;
         font-size: 0.7em;
     }
+
+    
+    .logInSubscribe {
+        padding-top: 10px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .logSub {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 118px;
+        font-size: smaller;
+    }
+
+    .b4 {
+        background-color: #ED9121;
+        color: white;
+        border: none;
+        font-size: 0.7em;
+        text-align: center;
+        padding: 10px 10px;
+        width: 15em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .b5 {
+        background-color: #ED9121;
+        color: white;
+        border: none;
+        font-size: 0.7em;
+        text-align: center;
+        padding: 10px 10px;
+        width: 15em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
@@ -221,7 +277,7 @@ html, body {height: 100%;}
 
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
     
     @font-face{
         font-family: 'inkfree';
@@ -283,9 +339,12 @@ html, body {height: 100%;}
     }
     
     .buttonContainer {
+        padding-top: 10px;
+        height: 200px;
         display: flex;
         align-items: center;
         flex-direction: column;
+        justify-content: space-evenly;
     }
     
     .bContainer {
@@ -333,6 +392,10 @@ html, body {height: 100%;}
         margin: none;
     }
     
+    .logIn a {
+        text-decoration: none;
+    }
+
     .b1 {
         background-color: #FF1100;
         color: white;
@@ -425,4 +488,48 @@ html, body {height: 100%;}
         text-align: center;
         width: 270px;
     }
+
+    .logInSubscribe {
+        padding-top: 10px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .logSub {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 141px;
+    }
+
+    .b4 {
+        background-color: #ED9121;
+        color: white;
+        border: none;
+        font-size: 1em;
+        text-align: center;
+        padding: 10px 10px;
+        width: 15em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .b5 {
+        background-color: #ED9121;
+        color: white;
+        border: none;
+        font-size: 1em;
+        text-align: center;
+        padding: 10px 10px;
+        width: 15em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
 }
