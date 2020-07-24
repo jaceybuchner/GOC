@@ -164,7 +164,7 @@ html, body {height: 100%;}
     }
 
     .gladImg{
-        width: 70%;
+        width: 300px;
         border: 1px solid #ddd;
         border-radius: 4px;
         display: block;
@@ -388,7 +388,7 @@ html, body {height: 100%;}
     }
     
     .gladImg {
-        padding-right: 15%;
+        padding-right:40%;
     }
 
     
@@ -459,6 +459,10 @@ html, body {height: 100%;}
         margin-right: auto;
     }
     
+    .gImg3 {
+        padding-right: 40%;
+    }
+
     .box6 {
         text-align: center;
         width: 700px;
@@ -544,15 +548,62 @@ html, body {height: 100%;}
         border-radius: 50px;
     }
 
-    .leftButtons {
+    .outerButtonContainer {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .pickRole {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pickRole h2 {
+        color: orangered;
+        font-size: x-large;
+    }
+    
+    .innerCont {
+        display: flex;
+        justify-content: center;
+    }
+
+    .buttonContainer2 {
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .leftButtons {
+        padding-top: 25px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     } 
 
     .midButtons {
-
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     .rightButtons {
+        padding-top: 25px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
+    .pageContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .importantQuote {
+        display: flex;
+        justify-content: center;
     }
 }
