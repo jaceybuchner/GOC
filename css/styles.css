@@ -120,7 +120,9 @@ html, body {height: 100%;}
     }
 
     .pContainer {
-        padding: 1%;
+        padding-top: 3%;
+        padding-right: 3%;
+        padding-left: 3%;
         justify-content: space-around;
         display: flex;
         flex-direction: row;
@@ -131,11 +133,13 @@ html, body {height: 100%;}
         width: 300px;
         height: 200px;
         text-align: center;
+        padding-right: 1%;
     }
 
     .box11 {
         text-align: center;
         width: 270px;
+        padding-left: 1%;
     }
 
     .pContainer2 {
@@ -160,7 +164,7 @@ html, body {height: 100%;}
     }
 
     .gladImg{
-        width: 80%;
+        width: 70%;
         border: 1px solid #ddd;
         border-radius: 4px;
         display: block;
@@ -520,7 +524,7 @@ html, body {height: 100%;}
     
     .b5 {
         background-color: #ED9121;
-        color: white;
+        color: white; 
         border: none;
         font-size: 1em;
         text-align: center;
