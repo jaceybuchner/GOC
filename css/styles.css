@@ -411,8 +411,8 @@ html, body {height: 100%;}
     }
     
     .buttonContainer {
-        padding-top: 10px;
-        height: 200px;
+        padding-top: 30px;
+        height: 250px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -467,14 +467,28 @@ html, body {height: 100%;}
         text-decoration: none;
     }
 
+    .buttonHolder {
+        padding-top: 25px;
+        display: flex;
+        height: 400px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .b11 {
+        padding-top: 10px;
+    }
+    
     .b1 {
         background-color: #FF1100;
         color: white;
         border: none;
         font-size: 1em;
         text-align: center;
-        padding: 10px 25px;
-        width: 11em;
+        border-radius: 15px;
+        padding: 5px 5px;
+        width: 7em;
+        height: 2.5em;
     }
     
     .b2 {
@@ -482,8 +496,9 @@ html, body {height: 100%;}
         color: white;
         border: none;
         font-size: 1em;
-        padding: 10px 25px;
-        width: 11em;
+        padding: 10px 15px;
+        height: 3em;
+        width: 10em;
         
     }
     
@@ -492,8 +507,9 @@ html, body {height: 100%;}
         color: white;
         border: none;
         font-size: 1em;
-        padding: 10px 25px;
-        width: 11em;
+        padding: 10px 15px;
+        height: 3em;
+        width: 10em;
     }
     
     .speechIsPower {
