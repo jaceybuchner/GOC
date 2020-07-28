@@ -474,21 +474,23 @@ html, body {height: 100%;}
     }
 
     .b11 {
-        padding-top: 10px;
+        padding-top: 20px;
     }
     
     .b1 {
-        background-color: #FF1100;
+        background-color: #ff5e00;
         color: white;
         border: none;
         font-size: 1em;
         text-align: center;
-        border-radius: 15px;
+        border-radius: 30px;
         padding: 5px 5px;
-        width: 7em;
-        height: 2.5em;
+        width: 20em;
+        height: 4em;
+        border: 1px solid black;
     }
     
+
     .b2 {
         background-color:#8acc25;
         color: white;
@@ -497,7 +499,7 @@ html, body {height: 100%;}
         padding: 10px 15px;
         height: 3em;
         width: 10em;
-        
+        border: 1px solid black;
     }
     
     .b3 {
@@ -508,6 +510,11 @@ html, body {height: 100%;}
         padding: 10px 15px;
         height: 3em;
         width: 10em;
+        border: 1px solid black;
+    }
+
+    .b1:hover, .b2:hover, .b3:hover {
+        border-color: whitesmoke;
     }
     
     .speechIsPower {

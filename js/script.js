@@ -3,7 +3,7 @@ var host = 'gladHost.html';
 
 $(".b1").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/'+host));
 
-var max = 'sessionMaxv2.html';
+var max = 'sessionMaxV2.html';
 
 $(".b2").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/'+max));
 
