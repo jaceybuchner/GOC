@@ -84,7 +84,6 @@ html, body {height: 100%;}
         font-size: 0.7em;
         padding: 10px 20px;
         width: 15em;
-        
     }
     
     .b3 {
@@ -835,5 +834,105 @@ html, body {height: 100%;}
         padding-top: 1%;
         padding-left: 25%;
     }
+
+
+    /*-----------SESSION PAGE STYLING------------*/
+
+
+    /*--------MAXIMIUS SESSION PAGE STYLING-------*/
+
+    .maxBodyContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .insideMaxC {
+        padding-top: 3%;
+        padding-left: 11%;
+        width: 500px;
+    }
+
+    .partCont {
+        display: flex;
+        justify-content: center;
+    }
+
+    .partCont p{
+        color: #cc4625;
+    }
+
+    .spotCont {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .spotCont h4 {
+        color: #cc4625;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+    }
+    
+    .spotCont h4:first-child {
+        margin-bottom: 0;
+    }
+
+    .spotCont h4:last-child {
+        margin-top: 0;
+    }
+
+    .img7 {
+        padding-top: 3%;
+        padding-left: 3%;
+        width: 430px;
+    }
+
+    .aBCont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .rolesA {
+        background-color: #ff5100d0;
+        color: white;
+        border: none;
+        font-size: 1em;
+        text-align: center;
+        padding: 5px 5px;
+        height: 3.3em;
+        width: 12em;
+        border: 1px solid black;
+    }
+    .rolesA:hover {
+        border-color: whitesmoke;
+    }
+
+    .rolesB {
+        background-color: #ffb300;
+        color: white;
+        border: none;
+        font-size: 1em;
+        text-align: center;
+        padding: 5px 5px;
+        height: 3.3em;
+        width: 12em;
+        border: 1px solid black;
+    }
+    .rolesB:hover {
+        border-color: whitesmoke;
+    }
+    
+    .mostImportantSkill {
+        padding-top: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
 }
 
