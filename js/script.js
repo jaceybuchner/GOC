@@ -8,6 +8,6 @@ var rolesA = 'rolesSpotA';
 
 var rolesB = 'rolesSpotB';
 
-$(".rolesA").click(() => alert("this will route you to the Roles A Assignment page"));
+$(".rolesA").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/rolesSpotA.html'));
 
 $(".rolesB").click(() => alert("this will route you to the Roles B Assignment page"));
