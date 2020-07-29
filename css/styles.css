@@ -850,6 +850,15 @@ html, body {height: 100%;}
         display: flex;
         flex-direction: row;
     }
+    
+    .rightBox {
+        padding-top: 20px;
+        padding-left: 100px;
+    }
+
+    .leftBox {
+        padding-top: 20px;
+    }
 
     .leftBox img {
         width: 500px;
@@ -863,6 +872,9 @@ html, body {height: 100%;}
         align-items: center;
     }
 
+    .flex1:last-child {
+        width: 100px;
+    }
 
     .flex1 .buttonGladius:first-child {
         padding-left: 50px;
