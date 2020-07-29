@@ -1,8 +1,4 @@
-
-var host = 'gladHost.html';
-
-$(".b1").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/'+host));
-
+$(".b1").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/sessionPage.html'));
 
 $(".b2").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/sessionMaxV2.html'));
 
