@@ -843,7 +843,7 @@ html, body {height: 100%;}
     }
 
 
-    /*-----------SESSION PAGE STYLING------------*/
+    /*------------------------SESSION PAGE STYLING-------------------------------*/
 
 
     .flexContainer {
@@ -964,7 +964,7 @@ html, body {height: 100%;}
 
 
 
-    /*--------MAXIMIUS SESSION PAGE STYLING-------*/
+    /*---------------------------MAXIMUS SESSION PAGE STYLING-----------------------------*/
 
     .maxBodyContainer {
         display: flex;
@@ -1076,6 +1076,70 @@ html, body {height: 100%;}
 
     .b22:hover {
         border-color: whitesmoke;
+    }
+
+
+    /*------------------------SPOT A SESSION STYLING----------------------------------*/
+
+    .pickRole2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pickRole2 h2 {
+        color: #cc4625;
+    }
+    
+    .pageSessContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .leftContainer {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    
+    .leftContainer h3 {
+        color: #cc4625;
+    }
+
+    .leftContainer h3:nth-child(2) {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .leftContainer h3:nth-child(3) {
+        padding-top: 0;
+        margin-top: 0
+    }
+
+    .gridButton{
+        background-color:rgb(255, 100, 0);
+        color: white;
+        border: none;
+        font-size: 1em;
+        padding: 10px 15px;
+        height: 3em;
+        width: 10em;
+        border-radius: 20px;
+    }
+
+    .gridContainer {
+        padding-left: 200px;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    .item2 img {
+        width: 200px;
+    }
+    .item5 img {
+        width: 200px;
     }
 }
 
