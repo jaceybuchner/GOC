@@ -1121,6 +1121,8 @@ html, body {height: 100%;}
     .listContainer ol li{
         font-size: 18px;
         color: #cc4625;
+        padding: 5px;
+        font-weight: 600;
     }
 
     .gridButton{
