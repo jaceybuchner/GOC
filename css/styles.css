@@ -1124,7 +1124,7 @@ html, body {height: 100%;}
         border: none;
         font-size: 1em;
         padding: 10px 15px;
-        height: 3em;
+        height: 50px;
         width: 10em;
         border-radius: 20px;
     }
@@ -1132,14 +1132,33 @@ html, body {height: 100%;}
     .gridContainer {
         padding-left: 200px;
         display: grid;
-        grid-template-columns: auto auto auto auto auto;
+        /*grid-template-columns: auto auto auto auto auto;*/
+        grid-template-columns: 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr;
+        grid-template-rows: 48px 48px 48px 48px;
+        grid-column-gap: 10px;
+        grid-row-gap: 25px;
+    }
+    
+
+    .item2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
     }
 
     .item2 img {
-        width: 200px;
+        width: 160px;
     }
+
+    .item6 {
+        grid-row;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
     .item5 img {
-        width: 200px;
+        width: 160px;
     }
 }
 
