@@ -329,6 +329,232 @@ html, body {height: 100%;}
         border: none;
         border-radius: 50px;
     }
+
+    /*---------------------------MAXIMUS SESSION PAGE STYLING-----------------------------*/
+
+    
+    .maxBodyContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .spotCont {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .spotCont h4 {
+        color: #cc4625;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
+    }
+    
+    .spotCont h4:first-child {
+        margin-bottom: 0;
+    }
+
+    .spotCont h4:last-child {
+        margin-top: 0;
+    }
+
+    .aBCont {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    .rolesA {
+        background-color: #ff5100d0;
+        color: white;
+        border: none;
+        font-size: 0.5em;
+        text-align: center;
+        padding: 5px 5px;
+        height: 3.3em;
+        width: 12em;
+        border: 1px solid black;
+    }
+
+    .rolesA:first-child, .rolesB:first-child {
+        margin-right: 10px;
+    }
+
+    .rolesA:nth-child(2), .rolesB:nth-child(2) {
+        margin-left: 10px
+    }
+
+    .rolesA:hover {
+        border-color: whitesmoke;
+    }
+
+    .rolesB {
+        background-color: #ffb300;
+        color: white;
+        border: none;
+        font-size: 0.5em;
+        text-align: center;
+        padding: 5px 5px;
+        height: 3.3em;
+        width: 12em;
+        border: 1px solid black;
+    }
+
+    .rolesB:hover {
+        border-color: whitesmoke;
+    }
+
+    .partCont {
+        display: flex;
+        justify-content: center;
+    }
+
+    .partCont p{
+        color: #cc4625;
+        font-size: 10px;
+    }
+
+    .img7 {
+        width: 60%;
+        padding-top: 10%;
+        padding-left: 20%;
+    }
+
+    .skillContainer {
+        padding-left: 10%;
+        width: 80%;
+    }
+
+    .mostImportantSkill {
+        padding-top: 10%;
+        font-size: 9.7px;
+        text-align: center;
+    }
+
+    
+    /*------------------------SESSION PAGE STYLING-------------------------------*/
+
+
+    .flexContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+  
+    .rightBox {
+        padding-top: 10%;
+    }
+
+    .leftBox {
+        padding-left: 20%;
+    }
+
+    .leftBox img {
+        width: 60%;
+    }
+
+    .flex1 {
+        margin-left: 10%;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .flex1:last-child {
+        width: 100px;
+    }
+
+
+    .flex1 h3 {
+        color: #ff7300;
+        font-size: 14px;
+    }
+
+
+    .buttonGladius {
+        width: 190px;
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        padding: 7px 14px;
+        font-size: 12px;
+        cursor: pointer;
+        border-color: #2196F3;
+        color: dodgerblue;
+        border-radius: 25px;
+    }
+
+
+    .buttonGladius:hover {
+        background: #2196F3;
+        color: white;
+    }
+
+    .buttonGladius2 {
+        width: 280px;
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        padding: 7px 14px;
+        font-size: 12px;
+        cursor: pointer;
+        border-color: #2196F3;
+        color: dodgerblue;
+        border-radius: 25px;
+    }
+
+    .buttonGladius2:hover {
+        background: #2196F3;
+        color: white;
+    }
+
+    
+    .createS {
+        background-color: #ffb300;
+        color: white;
+        border: none;
+        font-size: 0.6em;
+        padding: 7px 10px;
+        height: 3em;
+        width: 190px;
+        border: 1px solid black;
+    }
+  
+    .createS:hover {
+        border-color: white;
+    }                                           
+
+
+    .flex2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .flex2 h4 {
+        font-weight: 400;
+    }
+    
+    .flex2 p:last-child {
+        padding-top: 10px;
+    }
+
+    .flex2 div p, .flex2 p {
+        color: #ff7300 ;
+    }
+
+    .flex2 div p:first-child {
+        margin-bottom: 0;
+    }
+
+    .flex2 div p:nth-child(2) {
+        margin-top: 0;
+    }
+
 }
 
 
@@ -946,7 +1172,7 @@ html, body {height: 100%;}
     }
 
     .createS {
-        background-color:#8acc25;
+        background-color: #ffb300;
         color: white;
         border: none;
         font-size: 1em;
@@ -1212,7 +1438,7 @@ html, body {height: 100%;}
         grid-row-end: 6;
     }
 
-    .item15 button {
+    .gridButtonLong {
         background-color:rgb(255, 100, 0);
         color: white;
         border: none;
@@ -1231,10 +1457,35 @@ html, body {height: 100%;}
     }
 
     .mostImportantSkill2 {
-        color: #cc4625;
         padding-top: 5%;
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+
+    /*------------------------SPOT B additional SESSION STYLING----------------------------------*/
+    
+   
+
+    .gridButton2{
+        background-color: #ffb300;
+        color: white;
+        border: none;
+        font-size: 1em;
+        padding: 10px 15px;
+        height: 50px;
+        width: 10em;
+        border-radius: 20px;
+    }
+
+    .gridButtonLong2 {
+        background-color: #ffb300;
+        color: white;
+        border: none;
+        font-size: 1em;
+        padding: 10px 15px;
+        height: 50px;
+        width: 20em;
+        border-radius: 20px;
     }
 }

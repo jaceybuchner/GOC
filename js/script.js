@@ -8,6 +8,10 @@ var rolesA = 'rolesSpotA';
 
 var rolesB = 'rolesSpotB';
 
-$(".rolesA").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/rolesSpotA.html'));
+$(".rolesA:first-child").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/rolesSpotA.html'));
 
-$(".rolesB").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/rolesSpotB.html'));
+$(".buttonGladius").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/rolesSpotA.html'));
+
+
+$(".rolesB:first-child").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/rolesSpotB.html')); 
+
