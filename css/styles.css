@@ -130,12 +130,15 @@ html, body {height: 100%;}
         margin-right: auto;
     }
 
+    .leftB {
+        padding-top: 0px;
+    }
+
     .bContainer {
         font-size: 0.7em;
     }
 
     .pContainer {
-        padding-top: 3%;
         padding-right: 3%;
         padding-left: 3%;
         justify-content: space-around;
@@ -179,9 +182,7 @@ html, body {height: 100%;}
     }
 
     .gladImg{
-        width: 300px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
+        width: 200px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -195,10 +196,9 @@ html, body {height: 100%;}
     }
 
     .gImg3 {
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        width: 300px;
+        width: 200px;
         display: block;
+        margin-top: 4%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -574,18 +574,20 @@ html, body {height: 100%;}
 }
 
 
-
+/*
 @media only screen and (max-width: 768px) {
     * { 
         color: rgb(0,0,139);
     }
 }
 
+*/
 
 
 
 
-@media only screen and (min-width: 1025px) {
+
+@media only screen and (min-width: 768px) {
     
     @font-face {
         font-family: inkfree;
@@ -692,11 +694,11 @@ html, body {height: 100%;}
     }
     
     .leftB {
-        padding-left: 4%;
+        padding-left: 10%;
     }
     
     .imgGlad {
-        padding-right: 15%;
+        padding-right: 10%;
     }
     
     .spTypes {
@@ -812,16 +814,11 @@ html, body {height: 100%;}
     .box5 {
         font-size: 14px;
         width: 60%;
-        height: 500px;
-        padding-left: 5%;
+        padding-left: 10%;
     }
     
     .img3Holder {
-        padding-right: 15%;
-    }
-
-    .gImg3 {
-        padding-right: 50%;
+        padding-right: 10%;
     }
 
     .box6 {
