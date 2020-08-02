@@ -1,6 +1,22 @@
 
 html, body {height: 100%;}
 
+
+@font-face {
+    font-family: 'Ink Free';
+    src: url('InkFree.woff2') format('woff2'),
+        url('InkFree.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    font-family: 'Ink Free';
+}
+
+
 @media only screen and (max-width: 767px) {
     * {
         color: rgb(0,0,139);
