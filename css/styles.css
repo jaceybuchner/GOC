@@ -253,6 +253,7 @@ html, body {height: 100%;}
         justify-content: space-evenly;
     }
 
+    
     .logSub {
         display: block;
         margin-left: auto;
@@ -262,19 +263,6 @@ html, body {height: 100%;}
     }
 
     .b4 {
-        background-color: #ED9121;
-        color: white;
-        border: none;
-        font-size: 0.7em;
-        text-align: center;
-        padding: 10px 10px;
-        width: 15em;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .b5 {
         background-color: #ED9121;
         color: white;
         border: none;
@@ -706,10 +694,14 @@ html, body {height: 100%;}
         justify-content: space-around;
         padding-left: 5%;
         padding-right: 5%;
+        height:500px;
+
+        /*----*/
+        background-image: linear-gradient(to right, rgb(96, 110, 240), rgb(150, 184, 219));
     }
     
     .buttonContainer {
-        padding-top: 30px;
+        padding-top: 85px;
         height: 300px;
         display: flex;
         align-items: center;
@@ -772,18 +764,17 @@ html, body {height: 100%;}
     .logSubButton {
         color: white;
         background-color: rgba(255, 35, 0, 0.767);
-        border-color: white;
         font-size: 1.1em;
         font-weight: 600;
         height: 3em;
         width: 10em;
-        border: 3px solid white;
+        border: 3px solid rgba(0, 0, 0, 0);
         border-radius: 30px;
     }
     .logSubButton:hover {
-        border-color:  rgba(255, 35, 0, 0.767);
         background-color: white;
         color:  rgba(255, 35, 0, 0.767);
+        transform: scale(1.05);
     }
 
     .b11 {
@@ -816,6 +807,9 @@ html, body {height: 100%;}
         border: 3px solid rgba(0, 0, 0, 0);
         border-radius: 30px;
     }
+
+
+
     
     .b3 {
         background-color: #3299CC;
@@ -832,11 +826,13 @@ html, body {height: 100%;}
 
     .b1:hover, .b2:hover, .b3:hover {
         border-color: whitesmoke;
+        transform: scale(1.05)
     }
     
     .speechIsPower {
+        margin-top: 72.5px;
         width: 300px;
-        height: 300px;
+        height: 250px;
         text-align: center;
     }
     
@@ -845,7 +841,8 @@ html, body {height: 100%;}
     }
 
     .gladImg2 {
-        width: 500px;
+        margin-top: 25px;
+        width: 400px;
     }
 
     .box2 {
@@ -1005,35 +1002,46 @@ html, body {height: 100%;}
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 141px;
+        width: 175px;
+        font-size: 18px;
     }
 
     .b4 {
         background-color: #ED9121;
         color: white;
         border: none;
-        font-size: 1em;
+        font-weight: 900;
+        font-size: 1.1em;
         text-align: center;
-        padding: 10px 10px;
-        width: 15em;
+        padding: 10px 5px;
+        height: 3.5em;
+        width: 12em;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 3px solid rgba(0, 0, 0, 0);
+        border-radius: 30px;
     }
     
-    .b5 {
-        background-color: #ED9121;
-        color: white; 
-        border: none;
-        font-size: 1em;
-        text-align: center;
-        padding: 10px 10px;
-        width: 15em;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    .b4:hover {
+        border-color: white;
     }
-
+/*
+    .b3 {
+        background-color: #3299CC;
+        color: white;
+        font-weight: 800;
+        border: none;
+        font-size: 1.1em;
+        padding: 10px 15px;
+        height: 3em;
+        width: 10em;
+        border: 3px solid rgba(0, 0, 0, 0);
+        border-radius: 30px;
+    }
+*/
     .roleButton {
         background-color: orange;
         color: white;
@@ -1272,7 +1280,7 @@ html, body {height: 100%;}
         padding: 10px 15px;
         height: 3em;
         width: 190px;
-        border: 1px solid black;
+        border: 3px solid rgba(0, 0, 0, 0);
         border-radius: 30px;
     }
   
@@ -1350,7 +1358,7 @@ html, body {height: 100%;}
         padding: 5px 5px;
         height: 3.3em;
         width: 12em;
-        border: 1px solid rgba(0, 0, 0, 0);
+        border: 3px solid rgba(0, 0, 0, 0);
         border-radius: 30px;
     }
     .rolesA:hover {
@@ -1366,7 +1374,7 @@ html, body {height: 100%;}
         padding: 5px 5px;
         height: 3.3em;
         width: 12em;
-        border: 1px solid rgba(0, 0, 0, 0);
+        border: 3px solid rgba(0, 0, 0, 0);
         border-radius: 30px;
     }
     .rolesB:hover {
@@ -1535,6 +1543,7 @@ html, body {height: 100%;}
         grid-row-end: 6;
     }
 
+    
     .gridButtonLong {
         background-color:rgb(255, 100, 0);
         color: white;
@@ -1542,7 +1551,7 @@ html, body {height: 100%;}
         font-size: 1em;
         padding: 25px 15px;
         height: 70px;
-        width: 11em;
+        width: 18em;
         border-radius: 30px;
     }
     
@@ -1562,17 +1571,15 @@ html, body {height: 100%;}
 
     /*------------------------SPOT B additional SESSION STYLING----------------------------------*/
     
-   
-
     .gridButton2{
         background-color: #ffb300;
         color: white;
         border: none;
         font-size: 1em;
         padding: 10px 15px;
-        height: 50px;
-        width: 10em;
-        border-radius: 20px;
+        height: 70px;
+        width: 11em;
+        border-radius: 30px;
     }
 
     .gridButtonLong2 {
@@ -1581,8 +1588,24 @@ html, body {height: 100%;}
         border: none;
         font-size: 1em;
         padding: 10px 15px;
-        height: 50px;
-        width: 20em;
-        border-radius: 20px;
+        height: 70px;
+        width: 18em;
+        border-radius: 30px;
+    }
+
+    .test {
+        width: 100px;
+        height: 100px;
+        position: sticky;
+        animation: example 4s /*infinite;
+    }
+
+
+    @keyframes example {
+        0%   {left:0px; top:0px;}
+        25%  {left:200px; top:0px;}
+        50%  {left:200px; top:200px;}
+        75%  {eft:0px; top:200px;}
+        100% { left:0px; top:0px;}
     }
 }

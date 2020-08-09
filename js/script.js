@@ -1,3 +1,5 @@
+$(".logSubButton").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/logIn.html'));
+
 $(".b1").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/sessionPage.html'));
 
 $(".b2").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/sessionMaxV2.html'));
@@ -12,7 +14,6 @@ $(".rolesA:first-child").click(() => $(location).attr('href','https://jaceybuchn
 
 $(".buttonGladius").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/rolesSpotA.html'));
 
-
 $(".rolesB:first-child").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/rolesSpotB.html')); 
 
 
@@ -22,6 +23,9 @@ $(function() {
     // default is varying levels of transparent white sparkles
     $(".gridButton").sparkleh();
     $(".gridButtonLong").sparkleh();
+    $(".gridButton2").sparkleh();
+    $(".gridButtonLong2").sparkleh();
+
     // rainbow as a color generates random rainbow colros
     // count determines number of sparkles
     // overlap allows sparkles to migrate... watch out for other dom elements though.
