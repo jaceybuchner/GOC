@@ -17,6 +17,17 @@ $(".buttonGladius").click(() => $(location).attr('href','https://jaceybuchner.gi
 $(".rolesB:first-child").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/rolesSpotB.html')); 
 
 
+
+var x = $("#login");
+var y = $("#register");
+var z = $("#btn");
+
+function register() {
+  x.style.left = "-400px";
+  y.style.left = "50px";
+  z.style.left = "50px";
+}
+
 $(function() {
  
    
