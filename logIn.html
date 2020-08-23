@@ -62,26 +62,27 @@
                 <div id="btn"></div>
                 <button type="button" class="togButton" onclick="login()">Log In</button>
                 <button type="button" class="togButton" onclick="register()">Register</button>
-            </div>
+            </div> 
             <form id="login" class="inputGroup">
                 <input type="text" class="inputField" placeholder="Child's First Name" required>
                 <input type="text" class="inputField" placeholder="Email" required>
-                <input type="text" class="inputField" placeholder="Password" required>
-                <input type="checkbox" class="check">
-                <span>Remember Password</span>
+                <input type="password" class="inputField" placeholder="Password" required>
+                <!--<input type="checkbox" class="check">
+                <span>Remember Password</span>-->
                 <button type="submit" class="submitBtn">Login</button>
             </form>
             <form action="/test-form" method="POST" id="register" class="inputGroup">
-                <input type="text" class="inputField" placeholder="First Name" name="first-name" required>
-                <input type="text" class="inputField" placeholder="Last Name" name="last-name" required>
-                <input type="email" class="inputField" placeholder="Email" name="email" required>
-                <input type="text" class="inputField" placeholder="Phone Number (Optional)" name="phone-number">
-                <input type="text" class="inputField" placeholder="Password" name="password" required>
-                <input type="text" class="inputField" placeholder="Confirm Password" required>
-                <input type="text" class="inputField" placeholder="Child's First Name" name="child-name" required>
+                <input type="text"  id="first-name" class="inputField" placeholder="First Name" name="first-name" required>
+                <input type="text"  id="last-name" class="inputField" placeholder="Last Name" name="last-name" required>
+                <input type="email" id="email" class="inputField" placeholder="Email" name="email" required>
+                <input type="text"  id="phone-number" class="inputField" placeholder="Phone Number (Optional)" name="phone-number">
+                <input type="password"  id="password" class="inputField" placeholder="Password" name="password" required>
+                <input type="password"  id="password-confirm" class="inputField" placeholder="Confirm Password" name="password-confirm" brequired>
+                <input type="text"  id="child-name" class="inputField" placeholder="Child's First Name" name="child-name" required>
                 
-                <input type="checkbox" class="check">
-                <span>Remember Password</span>
+                <!--<input type="checkbox" class="check">
+                <span>Remember Password</span>-->
+                <div id="error"></div>  
                 <button type="submit" class="submitBtn">Register</button>
             </form>
         </div>

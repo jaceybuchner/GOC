@@ -633,7 +633,7 @@ html, body {height: 100%;}
     
     body {
         background-color: #21f3f363;
-        margin: 0px;
+        margin: 0px; 
     }
 
     @font-face {
@@ -689,17 +689,28 @@ html, body {height: 100%;}
     }
     
     .bodyContainer {
+        position: absolute;
+        z-index: 0;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding-left: 5%;
-        padding-right: 5%;
-        height:500px;
-
+        height: 60%;
+        width: 100%;
+        animation-name: background-transition;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
         /*----*/
-        background-image: linear-gradient(to right, rgb(96, 110, 240), rgb(150, 184, 219));
+        /*background-image: linear-gradient(to right, rgb(96, 110, 240), rgb(150, 184, 219));
+        */
     }
     
+    @keyframes background-transition{
+        0% {background-color:rgb(59, 188, 240);}
+        25% {background-color: rgb(120, 132, 235);}
+        50% {background-color:rgb(59, 188, 240);}
+        75% {background-color: rgb(120, 132, 235);}
+        100% {background-color:rgb(59, 188, 240);}
+    }
 
     .buttonContainer {
         padding-top: 85px;
@@ -764,14 +775,16 @@ html, body {height: 100%;}
 
     .logSubButton {
         color: white;
+        position: relative;
         background-color: rgba(255, 35, 0, 0.767);
         font-size: 1.1em;
         font-weight: 600;
         height: 3em;
-        width: 10em;
+        width: 12em;
         border: 3px solid rgba(0, 0, 0, 0);
         border-radius: 30px;
     }
+
     .logSubButton:hover {
         background-color: white;
         color:  rgba(255, 35, 0, 0.767);
@@ -782,6 +795,7 @@ html, body {height: 100%;}
         padding-top: 20px;
     }
     
+
     .b1 {
         background-color: #ff8800;
         color: white;
@@ -804,7 +818,7 @@ html, body {height: 100%;}
         font-size: 1.1em;
         padding: 10px 15px;
         height: 3em;
-        width: 10em;
+        width: 12em;
         border: 3px solid rgba(0, 0, 0, 0);
         border-radius: 30px;
     }
@@ -820,7 +834,7 @@ html, body {height: 100%;}
         font-size: 1.1em;
         padding: 10px 15px;
         height: 3em;
-        width: 10em;
+        width: 12em;
         border: 3px solid rgba(0, 0, 0, 0);
         border-radius: 30px;
     }
@@ -832,20 +846,280 @@ html, body {height: 100%;}
     
     .speechIsPower {
         margin-top: 72.5px;
-        width: 300px;
-        height: 250px;
+        width: 350px;
+        height: 300px;
+        padding: 0 20px;
         text-align: center;
+        background-color: rgb(90, 233, 233);
+        border-radius: 30px;
+        border: 3px solid whitesmoke;
     }
-    
+
+
     .speechIsPower h4, .speechIsPower p {
         font-weight: 600;
+        font-size: larger;
     }
+
+
+    .floatingWordsContainer div {
+        font-size: 1em;
+        
+    }
+
+    .an1 { /*make invisible until the words start to move*/
+        position: relative;
+        animation-name: floatingWords;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+    }
+
+    .an2 {
+        position: relative;
+        animation-name: floatingWords2;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+    }
+
+    .an3{ 
+	    position: relative;
+ 	    animation-name: floatingWords3;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+    }
+
+    .an4{ 
+	    position: relative;
+ 	    animation-name: floatingWords4;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+    }
+
+
+    .an5{ 
+	    position: relative;
+ 	    animation-name: floatingWords5;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+    }
+
+
+    .an6{ 
+	    position: relative;
+ 	    animation-name: floatingWords6;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+    }
+
+    .an7{ 
+	    position: relative;
+ 	    animation-name: floatingWords7;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+    }
+
+    .an8{ 
+	    position: relative;
+ 	    animation-name: floatingWords8;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes floatingWords {
+        0%   {left:52px; top:21px;}
+        10%  {left:50px; top:123;}
+        15%  {left:20px; top:230;}
+        20%  {left:10px; top:160;}
+        25%  {left:20px; top:123px;}
+        30%  {left:100px; top:63px;}
+        35%  {left:40px; top:132px;}
+        40%  {left:70px; top:12px;}
+        45%  {left:90px; top:270px;}
+        50%  {left:20px; top:250px;}
+        55%  {left:5px; top:12px;}
+        60%  {left:152px; top:33px;}
+        65%  {left:24px; top:98px;}
+        70%  {left:40px; top:125px;}
+        75%  {left:0px; top:240px;}
+        80%  {left:220px; top:12px;}
+        85%  {left:40px; top:12px;}
+        90%  {left:40px; top:12px;}
+        95%  {left:40px; top:12px;}
+        100% {left:0px; top:0px;}
+    }
+    
+
+    @keyframes floatingWords2 {
+        0%   {left:0px; top:100px;}
+        10%  {left:50px; top:982;}
+        15%  {left:502px; top:52;}
+        20%  {left:103px; top:123;}
+        25%  {left:260px; top:123px;}
+        30%  {left:100px; top:63px;}
+        35%  {left:458px; top:132px;}
+        40%  {left:70px; top:12px;}
+        45%  {left:90px; top:270px;}
+        50%  {left:202px; top:250px;}
+        55%  {left:180px; top:12px;}
+        60%  {left:222; top:150px;}
+        65%  {left:262px; top:300px;}
+        70%  {left:402px; top:125px;}
+        75%  {left:509px; top:240px;}
+        80%  {left:220px; top:12px;}
+        85%  {left:40px; top:12px;}
+        90%  {left:333px; top:12px;}
+        95%  {left:200px; top:12px;}
+        100% {left:0px; top:0px;}
+    }
+
+
+    @keyframes floatingWords3 {
+        0%   {left:0px; top:100px;}
+        10%  {left:50px; top:982;}
+        15%  {left:502px; top:52;}
+        20%  {left:103px; top:123;}
+        25%  {left:260px; top:123px;}
+        30%  {left:100px; top:63px;}
+        35%  {left:458px; top:132px;}
+        40%  {left:70px; top:12px;}
+        45%  {left:90px; top:270px;}
+        50%  {left:202px; top:250px;}
+        55%  {left:180px; top:12px;}
+        60%  {left:222; top:150px;}
+        65%  {left:262px; top:300px;}
+        70%  {left:402px; top:125px;}
+        75%  {left:509px; top:240px;}
+        80%  {left:220px; top:12px;}
+        85%  {left:40px; top:12px;}
+        90%  {left:333px; top:12px;}
+        95%  {left:200px; top:12px;}
+        100% {left:0px; top:0px;}
+    }
+
+    @keyframes floatingWords4 {
+        0%   {left:0px; top:100px;}
+        10%  {left:50px; top:982;}
+        15%  {left:502px; top:52;}
+        20%  {left:103px; top:123;}
+        25%  {left:260px; top:123px;}
+        30%  {left:100px; top:63px;}
+        35%  {left:458px; top:132px;}
+        40%  {left:70px; top:12px;}
+        45%  {left:90px; top:270px;}
+        50%  {left:202px; top:250px;}
+        55%  {left:180px; top:12px;}
+        60%  {left:222; top:150px;}
+        65%  {left:262px; top:300px;}
+        70%  {left:402px; top:125px;}
+        75%  {left:509px; top:240px;}
+        80%  {left:220px; top:100pxpx;}
+        85%  {left:40px; top:3px;}
+        90%  {left:333px; top:60px;}
+        95%  {left:200px; top:12px;}
+        100% {left:0px; top:0px;}
+    }
+
+    @keyframes floatingWords5 {
+        0%   {left:0px; top:100px;}
+        10%  {left:50px; top:982;}
+        15%  {left:502px; top:52;}
+        20%  {left:103px; top:123;}
+        25%  {left:260px; top:123px;}
+        30%  {left:100px; top:63px;}
+        35%  {left:458px; top:132px;}
+        40%  {left:70px; top:12px;}
+        45%  {left:90px; top:270px;}
+        50%  {left:202px; top:250px;}
+        55%  {left:180px; top:12px;}
+        60%  {left:222; top:150px;}
+        65%  {left:262px; top:300px;}
+        70%  {left:402px; top:125px;}
+        75%  {left:509px; top:240px;}
+        80%  {left:220px; top:12px;}
+        85%  {left:40px; top:12px;}
+        90%  {left:333px; top:80px;}
+        95%  {left:200px; top:12px;}
+        100% {left:0px; top:0px;}
+    }
+
+    @keyframes floatingWords6 {
+        0%   {left:0px; top:100px;}
+        10%  {left:50px; top:982;}
+        15%  {left:502px; top:52;}
+        20%  {left:103px; top:123;}
+        25%  {left:260px; top:123px;}
+        30%  {left:100px; top:63px;}
+        35%  {left:458px; top:132px;}
+        40%  {left:70px; top:12px;}
+        45%  {left:90px; top:270px;}
+        50%  {left:202px; top:250px;}
+        55%  {left:180px; top:12px;}
+        60%  {left:222; top:150px;}
+        65%  {left:262px; top:300px;}
+        70%  {left:402px; top:125px;}
+        75%  {left:509px; top:240px;}
+        80%  {left:220px; top:100px;}
+        85%  {left:40px; top:12px;}
+        90%  {left:333px; top:12px;}
+        95%  {left:200px; top:90px;}
+        100% {left:0px; top:0px;}
+    }
+
+    @keyframes floatingWords7 {
+        0%   {left:0px; top:100px;}
+        10%  {left:50px; top:982;}
+        15%  {left:502px; top:52;}
+        20%  {left:103px; top:123;}
+        25%  {left:220px; top:123px;}
+        30%  {left:600px; top:63px;}
+        35%  {left:258px; top:152px;}
+        40%  {left:320px; top:12px;}
+        45%  {left:100px; top:123px;}
+        50%  {left:402px; top:250px;}
+        55%  {left:180px; top:12px;}
+        60%  {left:22px; top:150px;}
+        65%  {left:532px; top:300px;}
+        70%  {left:1002px; top:129px;}
+        75%  {left:50px; top:300px;}
+        80%  {left:220px; top:12px;}
+        85%  {left:42px; top:12px;}
+        90%  {left:333px; top:102px;}
+        95%  {left:200px; top:12px;}
+        100% {left:0px; top:0px;}
+    }
+
+
+    @keyframes floatingWords8 {
+        0%   {left:0px; top:100px;}
+        10%  {left:50px; top:982;}
+        15%  {left:502px; top:52;}
+        20%  {left:103px; top:123;}
+        25%  {left:260px; top:123px;}
+        30%  {left:100px; top:63px;}
+        35%  {left:458px; top:132px;}
+        40%  {left:780px; top:12px;}
+        45%  {left:90px; top:270px;}
+        50%  {left:202px; top:250px;}
+        55%  {left:120px; top:12px;}
+        60%  {left:222; top:150px;}
+        65%  {left:262px; top:300px;}
+        70%  {left:422px; top:125px;}
+        75%  {left:509px; top:240px;}
+        80%  {left:820px; top:12px;}
+        85%  {left:230px; top:12px;}
+        90%  {left:233px; top:12px;}
+        95%  {left:200px; top:12px;}
+        100% {left:0px; top:0px;}
+    }
+
+    /*courage, envision, excellence, focus, announce, action, accomplish, clarity*/
 
     .gladImg2 {
         margin-top: 25px;
-        width: 400px;
+        width: 450px;
     }
 
+    
     .box2 {
         width: 700px;
         text-align: center;
@@ -1513,7 +1787,6 @@ html, body {height: 100%;}
     }
 
     .item6 {
-        grid-row;
         grid-column-start: 1;
         grid-column-end: 2;
     }
@@ -1781,6 +2054,10 @@ html, body {height: 100%;}
         position: absolute;
     }
 
+    .submitBtn {
+        margin-top: 10px;
+    }
+
     #login {
         left: 50px;
     }
@@ -1789,5 +2066,8 @@ html, body {height: 100%;}
         left: 450px
     }
 
-    
-}                   
+    #id {
+        height: 30px;
+        margin-bottom: 10px;
+    }
+}                       

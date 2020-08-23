@@ -1,14 +1,10 @@
-$(".logSubButton").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/logIn.html'));
+$(".logSubButton").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/logIn'));
 
-$(".b1").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/sessionPage.html'));
+$(".b1").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/sessionPage'));
 
 $(".b2").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/sessionMaxV2.html'));
 
 $(".b3").click(() => alert("This session is closed")); 
-
-var rolesA = 'rolesSpotA';
-
-var rolesB = 'rolesSpotB';
 
 $(".rolesA:first-child").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/rolesSpotA.html'));
 
@@ -16,22 +12,46 @@ $(".buttonGladius").click(() => $(location).attr('href','https://jaceybuchner.gi
 
 $(".rolesB:first-child").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/rolesSpotB.html')); 
 
+const first_name = document.getElementById("first-name");
+const last_name = document.getElementById("last-name");
+const email = document.getElementById("email");
+const phone_number = document.getElementById("phone-number");
+const password = document.getElementById('password');
+const password_confirm = document.getElementById("password-confirm");
+const child_name = document.getElementById("child-name");
+const errorDiv = document.getElementById("error");
 
-var x = document.getElementById("login");
-var y = document.getElementById("register");
-var z = document.getElementById("btn");
 
-        function register(){
-            x.style.left = "-400px";
-            y.style.left = "50px";
-            z.style.left = "110px";
-        }
+const loginBtn = document.getElementById("login");
+const registerBtn = document.getElementById("register");
+const btnSwitch = document.getElementById("btn");
 
-        function login(){
-            x.style.left = "50px";
-            y.style.left = "450px";
-            z.style.left = "0";
-        }
+
+registerBtn.addEventListener('submit', (e) => {
+  let errors = 0;
+  if (!(password.value === password_confirm.value)) {
+    errors++;
+  }
+
+  if (errors > 0) {
+    errorDiv.innerText = "Passwords do not match";
+    e.preventDefault();
+  }
+})
+
+
+// for moving login / register to the left and the right
+const register = () => {
+  loginBtn.style.left = "-400px";
+  registerBtn.style.left = "50px";
+  btnSwitch.style.left = "110px";
+}
+
+const login = () => {
+  loginBtn.style.left = "50px";
+  registerBtn.style.left = "450px";
+  btnSwitch.style.left = "0";
+}
         
 $(function() {
  

@@ -12,7 +12,7 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
     console.log('Connected to Database')
 
     const db = client.db('goc-data')
-    const namesCollection = db.collection('names')
+    const namesCollection = db.collection('names') // collections of names created
 
     // handlers 
     app.post('/test-form', (req, res) => {
@@ -29,7 +29,7 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
     app.get('/', (req, res) => {
         res.sendFile(__dirname + '/index.html')
     })
-
+    
     app.get('/index', (req, res) => {
         res.sendFile(__dirname + '/index.html')
     })
