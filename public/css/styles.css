@@ -798,6 +798,7 @@ html, body {height: 100%;}
 
     .b1 {
         background-color: #ff8800;
+        z-index: 2;
         color: white;
         border: none;
         font-size: 1em;
@@ -812,6 +813,7 @@ html, body {height: 100%;}
 
     .b2 {
         background-color:#8acc25;
+        z-index: 2;
         color: white;
         font-weight: 800;
         border: none;
@@ -828,6 +830,7 @@ html, body {height: 100%;}
     
     .b3 {
         background-color: #8acc25; /*#3299CC;*/
+        z-index: 2;
         color: white;
         font-weight: 800;
         border: none;
@@ -861,37 +864,49 @@ html, body {height: 100%;}
         font-size: larger;
     }
 
-
-    .floatingWordsContainer div {
-        font-size: 1em;
-        
+    .floatingWordsContainer {
+        width: 100%;
+        height: 60%;
     }
 
+    .an1, .an2, .an3, .an4, .an5, .an6, .an7, .an8{
+        font-size: 1.2em;
+        z-index: 1;
+        color: white;
+    }
+
+    
     .an1 { /*make invisible until the words start to move*/
         position: relative;
         animation-name: floatingWords;
-        animation-duration: 60s;
+        animation-duration: 80s;
         animation-iteration-count: infinite;
+        animation-direction: reverse;
     }
 
     .an2 {
         position: relative;
         animation-name: floatingWords2;
-        animation-duration: 60s;
+        animation-duration: 80s;
+        animation-delay: 0.3s;
         animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
     }
 
     .an3{ 
 	    position: relative;
  	    animation-name: floatingWords3;
-        animation-duration: 60s;
+        animation-duration: 80s;
+        animation-delay: 0.5s;
+        animation-direction: reverse;
         animation-iteration-count: infinite;
     }
 
     .an4{ 
 	    position: relative;
  	    animation-name: floatingWords4;
-        animation-duration: 60s;
+        animation-duration: 80s;
+        animation-delay: 1s;
         animation-iteration-count: infinite;
     }
 
@@ -899,7 +914,8 @@ html, body {height: 100%;}
     .an5{ 
 	    position: relative;
  	    animation-name: floatingWords5;
-        animation-duration: 60s;
+        animation-duration: 80s;
+        animation-direction: alternate-reverse;
         animation-iteration-count: infinite;
     }
 
@@ -907,209 +923,139 @@ html, body {height: 100%;}
     .an6{ 
 	    position: relative;
  	    animation-name: floatingWords6;
-        animation-duration: 60s;
+        animation-duration: 100s;
+        animation-direction: reverse;
         animation-iteration-count: infinite;
     }
 
     .an7{ 
 	    position: relative;
  	    animation-name: floatingWords7;
-        animation-duration: 60s;
+        animation-duration: 80s;
         animation-iteration-count: infinite;
     }
 
     .an8{ 
 	    position: relative;
  	    animation-name: floatingWords8;
-        animation-duration: 60s;
+        animation-duration: 80s;
+        animation-direction: reverse;
         animation-iteration-count: infinite;
     }
 
     @keyframes floatingWords {
-        0%   {left:52px; top:21px;}
-        10%  {left:50px; top:123;}
-        15%  {left:20px; top:230;}
-        20%  {left:10px; top:160;}
-        25%  {left:20px; top:123px;}
-        30%  {left:100px; top:63px;}
-        35%  {left:40px; top:132px;}
-        40%  {left:70px; top:12px;}
-        45%  {left:90px; top:270px;}
-        50%  {left:20px; top:250px;}
-        55%  {left:5px; top:12px;}
-        60%  {left:152px; top:33px;}
-        65%  {left:24px; top:98px;}
-        70%  {left:40px; top:125px;}
-        75%  {left:0px; top:240px;}
-        80%  {left:220px; top:12px;}
-        85%  {left:40px; top:12px;}
-        90%  {left:40px; top:12px;}
-        95%  {left:40px; top:12px;}
-        100% {left:0px; top:0px;}
+        0%   {left:20%; top:100px;}
+        10%  {left:50%; top:982;}
+        20%  {left:10%; top:123;}
+        30%  {left:46%; top:63px;}
+        40%  {left:73%; top:12px;}
+        50%  {left:21%; top:250px;}
+        60%  {left:65%; top:150px;}
+        70%  {left:40%; top:12px;}
+        80%  {left:22%; top:127px;}
+        90%  {left:33%; top:90px;}
+        100% {left:10%; top:10px;}
     }
     
 
     @keyframes floatingWords2 {
-        0%   {left:0px; top:100px;}
-        10%  {left:50px; top:982;}
-        15%  {left:502px; top:52;}
-        20%  {left:103px; top:123;}
-        25%  {left:260px; top:123px;}
-        30%  {left:100px; top:63px;}
-        35%  {left:458px; top:132px;}
-        40%  {left:70px; top:12px;}
-        45%  {left:90px; top:270px;}
-        50%  {left:202px; top:250px;}
-        55%  {left:180px; top:12px;}
-        60%  {left:222; top:150px;}
-        65%  {left:262px; top:300px;}
-        70%  {left:402px; top:125px;}
-        75%  {left:509px; top:240px;}
-        80%  {left:220px; top:12px;}
-        85%  {left:40px; top:12px;}
-        90%  {left:333px; top:12px;}
-        95%  {left:200px; top:12px;}
-        100% {left:0px; top:0px;}
+        0%   {left:0%; top:16px;}
+        10%  {left:70%; top:98px;}
+        20%  {left:10%; top:123px;}
+        30%  {left:59%; top:302px;}
+        40%  {left:80%; top:102px;}
+        50%  {left:20%; top:80px;}
+        60%  {left:22%; top:180px;}
+        70%  {left:40%; top:190px;}
+        80%  {left:10%; top:120px;}
+        90%  {left:70%; top:29px;}
+        100% {left:15%; top:90px;}
     }
 
 
     @keyframes floatingWords3 {
-        0%   {left:0px; top:100px;}
-        10%  {left:50px; top:982;}
-        15%  {left:502px; top:52;}
-        20%  {left:103px; top:123;}
-        25%  {left:260px; top:123px;}
-        30%  {left:100px; top:63px;}
-        35%  {left:458px; top:132px;}
-        40%  {left:70px; top:12px;}
-        45%  {left:90px; top:270px;}
-        50%  {left:202px; top:250px;}
-        55%  {left:180px; top:12px;}
-        60%  {left:222; top:150px;}
-        65%  {left:262px; top:300px;}
-        70%  {left:402px; top:125px;}
-        75%  {left:509px; top:240px;}
-        80%  {left:220px; top:12px;}
-        85%  {left:40px; top:12px;}
-        90%  {left:333px; top:12px;}
-        95%  {left:200px; top:12px;}
-        100% {left:0px; top:0px;}
+        0%   {left:15%; top:10px;}
+        10%  {left:73%; top:98px;}
+        20%  {left:13%; top:13px;}
+        30%  {left:60%; top:263px;}
+        40%  {left:2%; top:112px;}
+        50%  {left:20%; top:50px;}
+        60%  {left:62%; top:69px;}
+        70%  {left:40%; top:40px;}
+        80%  {left:22%; top:1px;}
+        90%  {left:59%; top:300px;}
+        100% {left:70%; top:68px;}
     }
 
     @keyframes floatingWords4 {
-        0%   {left:0px; top:100px;}
-        10%  {left:50px; top:982;}
-        15%  {left:502px; top:52;}
-        20%  {left:103px; top:123;}
-        25%  {left:260px; top:123px;}
-        30%  {left:100px; top:63px;}
-        35%  {left:458px; top:132px;}
-        40%  {left:70px; top:12px;}
-        45%  {left:90px; top:270px;}
-        50%  {left:202px; top:250px;}
-        55%  {left:180px; top:12px;}
-        60%  {left:222; top:150px;}
-        65%  {left:262px; top:300px;}
-        70%  {left:402px; top:125px;}
-        75%  {left:509px; top:240px;}
-        80%  {left:220px; top:100pxpx;}
-        85%  {left:40px; top:3px;}
-        90%  {left:333px; top:60px;}
-        95%  {left:200px; top:12px;}
-        100% {left:0px; top:0px;}
+        0%   {left:10%; top:150px;}
+        10%  {left:25%; top:360px;}
+        20%  {left:65%; top:209px;}
+        30%  {left:14%; top:303px;}
+        40%  {left:50%; top:96px;}
+        50%  {left:75%; top:290px;}
+        60%  {left:8%; top:70px;}
+        70%  {left:45%; top:15px;}
+        80%  {left:51%; top:60px;}
+        90%  {left:69%; top:1px;}
+        100% {left:79%; top:100px;}
     }
 
     @keyframes floatingWords5 {
-        0%   {left:0px; top:100px;}
-        10%  {left:50px; top:982;}
-        15%  {left:502px; top:52;}
-        20%  {left:103px; top:123;}
-        25%  {left:260px; top:123px;}
-        30%  {left:100px; top:63px;}
-        35%  {left:458px; top:132px;}
-        40%  {left:70px; top:12px;}
-        45%  {left:90px; top:270px;}
-        50%  {left:202px; top:250px;}
-        55%  {left:180px; top:12px;}
-        60%  {left:222; top:150px;}
-        65%  {left:262px; top:300px;}
-        70%  {left:402px; top:125px;}
-        75%  {left:509px; top:240px;}
-        80%  {left:220px; top:12px;}
-        85%  {left:40px; top:12px;}
-        90%  {left:333px; top:80px;}
-        95%  {left:200px; top:12px;}
-        100% {left:0px; top:0px;}
+        0%   {left:10%; top:200px;}
+        10%  {left:25%; top:77px;}
+        20%  {left:77%; top:14px;}
+        30%  {left:60%; top:304px;}
+        40%  {left:80%; top:190px;}
+        50%  {left:92%; top:70px;}
+        60%  {left:69%; top:190px;}
+        70%  {left:50%; top:90px;}
+        80%  {left:39%; top:7px;}
+        90%  {left:79%; top:109px;}
+        100% {left:90%; top:200px;}
     }
 
     @keyframes floatingWords6 {
-        0%   {left:0px; top:100px;}
-        10%  {left:50px; top:982;}
-        15%  {left:502px; top:52;}
-        20%  {left:103px; top:123;}
-        25%  {left:260px; top:123px;}
-        30%  {left:100px; top:63px;}
-        35%  {left:458px; top:132px;}
-        40%  {left:70px; top:12px;}
-        45%  {left:90px; top:270px;}
-        50%  {left:202px; top:250px;}
-        55%  {left:180px; top:12px;}
-        60%  {left:222; top:150px;}
-        65%  {left:262px; top:300px;}
-        70%  {left:402px; top:125px;}
-        75%  {left:509px; top:240px;}
-        80%  {left:220px; top:100px;}
-        85%  {left:40px; top:12px;}
-        90%  {left:333px; top:12px;}
-        95%  {left:200px; top:90px;}
-        100% {left:0px; top:0px;}
+        0%   {left:40%; top:0px;}
+        10%  {left:35%; top:9px;}
+        20%  {left:10%; top:404px;}
+        30%  {left:76%; top:14px;}
+        40%  {left:90%; top:208px;}
+        50%  {left:23%; top:0px;}
+        60%  {left:61%; top:90px;}
+        70%  {left:3%; top:29px;}
+        80%  {left:24%; top:230px;}
+        90%  {left:77%; top:400px;}
+        100% {left:34%; top:70px;}
     }
 
     @keyframes floatingWords7 {
-        0%   {left:0px; top:100px;}
-        10%  {left:50px; top:982;}
-        15%  {left:502px; top:52;}
-        20%  {left:103px; top:123;}
-        25%  {left:220px; top:123px;}
-        30%  {left:600px; top:63px;}
-        35%  {left:258px; top:152px;}
-        40%  {left:320px; top:12px;}
-        45%  {left:100px; top:123px;}
-        50%  {left:402px; top:250px;}
-        55%  {left:180px; top:12px;}
-        60%  {left:22px; top:150px;}
-        65%  {left:532px; top:300px;}
-        70%  {left:1002px; top:129px;}
-        75%  {left:50px; top:300px;}
-        80%  {left:220px; top:12px;}
-        85%  {left:42px; top:12px;}
-        90%  {left:333px; top:102px;}
-        95%  {left:200px; top:12px;}
-        100% {left:0px; top:0px;}
+        0%   {left:87%; top:199px;}
+        10%  {left:93%; top:90px;}
+        20%  {left:60%; top:304px;}
+        30%  {left:55%; top:430px;}
+        40%  {left:34%; top:10px;}
+        50%  {left:79%; top:0px;}
+        60%  {left:12%; top:400px;}
+        70%  {left:35%; top:290px;}
+        80%  {left:86%; top:230px;}
+        90%  {left:47%; top:400px;}
+        100% {left:13%; top:70px;}
     }
 
 
     @keyframes floatingWords8 {
-        0%   {left:0px; top:100px;}
-        10%  {left:50px; top:982;}
-        15%  {left:502px; top:52;}
-        20%  {left:103px; top:123;}
-        25%  {left:260px; top:123px;}
-        30%  {left:100px; top:63px;}
-        35%  {left:458px; top:132px;}
-        40%  {left:780px; top:12px;}
-        45%  {left:90px; top:270px;}
-        50%  {left:202px; top:250px;}
-        55%  {left:120px; top:12px;}
-        60%  {left:222; top:150px;}
-        65%  {left:262px; top:300px;}
-        70%  {left:422px; top:125px;}
-        75%  {left:509px; top:240px;}
-        80%  {left:820px; top:12px;}
-        85%  {left:230px; top:12px;}
-        90%  {left:233px; top:12px;}
-        95%  {left:200px; top:12px;}
-        100% {left:0px; top:0px;}
+        0%   {left:80%; top:0px;}
+        10%  {left:73%; top:90px;}
+        20%  {left:90%; top:44px;}
+        30%  {left:40%; top:14px;}
+        40%  {left:24%; top:280px;}
+        50%  {left:1%; top:2px;}
+        60%  {left:30%; top:97px;}
+        70%  {left:71%; top:290px;}
+        80%  {left:80%; top:40px;}
+        90%  {left:95%; top:10px;}
+        100% {left:67%; top:370px;}
     }
 
     /*courage, envision, excellence, focus, announce, action, accomplish, clarity*/
@@ -1123,7 +1069,7 @@ html, body {height: 100%;}
     .box2 {
         width: 700px;
         text-align: center;
-        font-size: 16px;
+        font-size: 18px;
         padding-top: 0.2%;
     }
 
@@ -1139,7 +1085,7 @@ html, body {height: 100%;}
 
     .box3 h4 {
         padding-top: 20px;
-        font-size: 16px;
+        font-size: 18px;
         margin: 0;
     }
 
@@ -1165,7 +1111,7 @@ html, body {height: 100%;}
     }
 
     .box5 {
-        font-size: 16px;
+        font-size: 18px;
         width: 600px;
     }
     
@@ -1174,7 +1120,7 @@ html, body {height: 100%;}
     }
 
     .box6 {
-        font-size: 16px;
+        font-size: 18px;
         text-align: center;
         width: 700px;
         height: 70px;
@@ -1191,7 +1137,7 @@ html, body {height: 100%;}
     }
 
     .box7 {
-        font-size: 16px;
+        font-size: 18px;
         padding-left: 2%;
         width: 500px;
     }
@@ -1205,13 +1151,13 @@ html, body {height: 100%;}
         padding-left: 2%;
         padding-top: 1%;
         padding-bottom: 1%;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .box8 h4 {
         padding: 0;
         margin: 0;
-        font-size: 16px;
+        font-size: 18px;
     }
     
     .box8 p {
@@ -1236,15 +1182,15 @@ html, body {height: 100%;}
     
     .box10 {
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .box10 ul li {
-        padding-bottom: 10px;
+        padding-bottom: 12px;
     }
 
     .box10 h4 {
-        font-size: 16px;
+        font-size: 18px;
     }
     
     .box11 {
