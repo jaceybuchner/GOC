@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 var app = express();
 
 app.use(bodyParser.json());
+const test = "asdasd";
 
 /*
 var mysqlConnection = mysql.createConnection({

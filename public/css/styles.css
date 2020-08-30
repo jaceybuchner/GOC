@@ -688,13 +688,48 @@ html, body {height: 100%;}
         transform: scale(1.05);
     }
     
+
+    
+    .title {
+        margin-top: 15px;
+        font-size: 50px;
+        color: white;
+        overflow: hidden; 
+        border-right: .15em solid orange;
+        white-space: nowrap; 
+        margin: 0 auto; 
+        letter-spacing: .15em; 
+        animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+    }
+
+    .title:hover {
+        color: rgb(241, 171, 39);
+        transition-duration: 2s;
+    }
+    
+  
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 60% }
+    }
+
+    
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: rgba(255, 166, 0, 0.952) }
+    }
+    
+    
     .bodyContainer {
         position: absolute;
         z-index: 0;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        height: 60%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
         width: 100%;
         animation-name: background-transition;
         animation-duration: 30s;
@@ -706,15 +741,24 @@ html, body {height: 100%;}
     
     @keyframes background-transition{
         0% {background-color:rgb(59, 188, 240);}
-        25% {background-color: rgb(120, 132, 235);}
+        25% {background-color: rgb(178, 136, 202);}
         50% {background-color:rgb(59, 188, 240);}
-        75% {background-color: rgb(120, 132, 235);}
+        75% {background-color: rgb(178, 136, 202);}
         100% {background-color:rgb(59, 188, 240);}
     }
 
     .buttonContainer {
         padding-top: 85px;
         height: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .buttonContainer3 {
+        padding-top: 80px;
+        height: 380px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -777,12 +821,12 @@ html, body {height: 100%;}
         color: white;
         position: relative;
         background-color: rgba(255, 35, 0, 0.767);
-        font-size: 1.1em;
+        font-size: 1.25em;
         font-weight: 600;
-        height: 3em;
-        width: 12em;
+        height: 3.5em;
+        width: 14em;
         border: 3px solid rgba(0, 0, 0, 0);
-        border-radius: 30px;
+        border-radius: 50px;
     }
 
     .logSubButton:hover {
@@ -801,12 +845,12 @@ html, body {height: 100%;}
         z-index: 2;
         color: white;
         border: none;
-        font-size: 1em;
+        font-size: 1.25em;
         font-weight: 800;
         text-align: center;
-        border-radius: 30px;
+        border-radius: 40px;
         width: 20em;
-        height: 4em;
+        height: 3.5em;
         border: 3px solid rgba(0, 0, 0, 0);
     }
     
@@ -817,29 +861,26 @@ html, body {height: 100%;}
         color: white;
         font-weight: 800;
         border: none;
-        font-size: 1.1em;
+        font-size: 1.25em;
         padding: 10px 15px;
-        height: 3em;
-        width: 12em;
+        height: 3.5em;
+        width: 14em;
         border: 3px solid rgba(0, 0, 0, 0);
-        border-radius: 30px;
+        border-radius: 40px;
     }
 
-
-
-    
     .b3 {
         background-color: #8acc25; /*#3299CC;*/
         z-index: 2;
         color: white;
         font-weight: 800;
         border: none;
-        font-size: 1.1em;
+        font-size: 1.25em;
         padding: 10px 15px;
-        height: 3em;
-        width: 12em;
+        height: 3.5em;
+        width: 14em;
         border: 3px solid rgba(0, 0, 0, 0);
-        border-radius: 30px;
+        border-radius: 40px;
     }
 
     .b1:hover, .b2:hover, .b3:hover {
@@ -848,9 +889,12 @@ html, body {height: 100%;}
     }
     
     .speechIsPower {
-        margin-top: 72.5px;
-        width: 350px;
-        height: 300px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+        height: 220px;
         padding: 0 20px;
         text-align: center;
         background-color: rgb(90, 233, 233);
@@ -864,13 +908,32 @@ html, body {height: 100%;}
         font-size: larger;
     }
 
+    .bodyContainer2 {
+        background-color: rgb(52, 150, 192); 
+        width: 100%;
+        margin-top: 700px;
+        display: flex;
+        flex-direction: column;
+        animation-name: background-transition2;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes background-transition2{
+        0% {background-color:rgb(164, 170, 230);}
+        25% {background-color: rgb(59, 188, 240);}
+        50% {background-color:rgb(164, 170, 230);}
+        75% {background-color: rgb(59, 188, 240);}
+        100% {background-color:rgb(164, 170, 230);}
+    }
+
     .floatingWordsContainer {
         width: 100%;
         height: 60%;
     }
 
     .an1, .an2, .an3, .an4, .an5, .an6, .an7, .an8{
-        font-size: 1.2em;
+        font-size: 1.4em;
         z-index: 1;
         color: white;
     }
@@ -992,7 +1055,7 @@ html, body {height: 100%;}
         10%  {left:25%; top:360px;}
         20%  {left:65%; top:209px;}
         30%  {left:14%; top:303px;}
-        40%  {left:50%; top:96px;}
+        40%  {left:50%; top:96px; }
         50%  {left:75%; top:290px;}
         60%  {left:8%; top:70px;}
         70%  {left:45%; top:15px;}

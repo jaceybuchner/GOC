@@ -1,6 +1,8 @@
+import 'server.js';
+
 $(".logSubButton").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/logIn'));
 
-$(".b1").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/sessionPage'));
+//$(".b1").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/sessionPage'));
 
 $(".b2").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/sessionMaxV2.html'));
 
@@ -11,6 +13,11 @@ $(".rolesA:first-child").click(() => $(location).attr('href','https://jaceybuchn
 $(".buttonGladius").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/rolesSpotA.html'));
 
 $(".rolesB:first-child").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/rolesSpotB.html')); 
+
+$(".b1").click(() => console.log(test));
+
+
+
 
 const first_name = document.getElementById("first-name");
 const last_name = document.getElementById("last-name");
