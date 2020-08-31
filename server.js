@@ -26,50 +26,50 @@ mysqlConnection.connect( (err) => {
 })*/
 
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname));
 
 // routing for pages
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
-app.get('/index', (req, res) => {
+app.get('/index.html', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
-app.get('/about', (req, res) => {
+app.get('/about.html', (req, res) => {
     res.sendFile(__dirname +'/about.html')
 })
 
-app.get('/gladHost', (req, res) => {
+app.get('/gladHost.html', (req, res) => {
     res.sendFile(__dirname + '/gladHost.html')
 })
 
-app.get('/login', (req, res) => {
+app.get('/logIn.html', (req, res) => {
     res.sendFile(__dirname + '/logIn.html')
 })
 
-app.get('/rewards', (req, res) => {
+app.get('/rewards.html', (req, res) => {
     res.sendFile(__dirname + '/rewards.html')
 })
 
-app.get('/roles', (req, res) => {
+app.get('/roles.html', (req, res) => {
     res.sendFile(__dirname + '/roles.html')
 })
 
-app.get('/spotA', (req, res) => {
+app.get('/rolesSpotA.html', (req, res) => {
     res.sendFile(__dirname + '/rolesSpotA.html')
 })
 
-app.get('/spotB', (req, res) => {
+app.get('/rolesSpotB.html', (req, res) => {
     res.sendFile(__dirname + '/rolesSpotB.html')
 })
 
-app.get('/sessionMaxV2', (req, res) => {
+app.get('/sessionMaxV2.html', (req, res) => {
     res.sendFile(__dirname + '/sessionMaxV2.html')
 })
 
-app.get('/sessionPage', (req, res) => {
+app.get('/sessionPage.html', (req, res) => {
     res.sendFile(__dirname + '/sessionPage.html')
 })
 

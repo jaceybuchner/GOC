@@ -1,8 +1,7 @@
-import 'server.js';
 
 $(".logSubButton").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/logIn'));
 
-//$(".b1").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/sessionPage'));
+$(".b1").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/sessionPage'));
 
 $(".b2").click(() => $(location).attr('href','https://jaceybuchner.github.io/GOC/sessionMaxV2.html'));
 
