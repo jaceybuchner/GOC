@@ -856,7 +856,7 @@ html, body {height: 100%;}
     
 
     .b2 {
-        background-color:#8acc25;
+        background-color:#255fcc;
         z-index: 2;
         color: white;
         font-weight: 800;
@@ -870,7 +870,7 @@ html, body {height: 100%;}
     }
 
     .b3 {
-        background-color: #8acc25; /*#3299CC;*/
+        background-color: #255fcc; /*#3299CC;*/
         z-index: 2;
         color: white;
         font-weight: 800;

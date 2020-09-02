@@ -1,30 +1,33 @@
 const mysql = require("mysql");
 const express = require("express");
 const bodyParser = require("body-parser");
+const { connect } = require("mongodb");
 
 var app = express();
 
 app.use(bodyParser.json());
-const test = "asdasd";
 
-/*
-var mysqlConnection = mysql.createConnection({
-    host : "localhost",
-    user : "root",
-    password : ,
-    database : "goc",
-    multipleStatements: true
+var connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '123xdmysql',
+    database: 'goc'
 });
 
-mysqlConnection.connect( (err) => {
-    if (!err) {
-        console.log("Connected");
+connection.connect((err) => {
+    if (!!err) {
+        console.log("Connected")
     } else {
-        console.log(err.code);
-        console.log("Connection Failed");
+        console.log("Not Connected")
     }
-})*/
+})
 
+
+
+
+app.listen(3000);
+
+/*
 
 app.use(express.static(__dirname));
 
@@ -72,8 +75,5 @@ app.get('/sessionMaxV2.html', (req, res) => {
 app.get('/sessionPage.html', (req, res) => {
     res.sendFile(__dirname + '/sessionPage.html')
 })
-
-
-app.listen(3000);
-
+*/
 
